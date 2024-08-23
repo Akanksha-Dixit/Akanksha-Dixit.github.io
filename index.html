@@ -14,6 +14,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+    <style>
+        .navbar-nav > li.active > a {
+            background-color: #007bff;
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
 
@@ -32,11 +40,13 @@
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav">
-				  <li><a href="index.html">Home</a></li>
-				  <li><a href="#">Projects</a></li>
-				  <li><a href="#publications" >Publications</a></li> 
-				  <li><a href="#">CV</a></li> 
+		  <ul class="nav navbar-nav" style="font-size: 18px;">
+				  <li class="active"><a href="index.html">HOME</a></li>
+				  <li><a href="projects.html">PROJECTS</a></li>
+				  <li><a href="publications.html" >PUBLICATIONS</a></li> 
+				  <li><a href="work.html" >WORK EXPERIENCE</a></li> 
+				  <li><a href="files/akanksha-resume.pdf">RESUME</a></li> 
+				  <li><a href="contact.html">CONTACT</a></li> 
 		  </ul>
 		</div>
 	  </div>
@@ -54,7 +64,7 @@
                 <img class="img-responsive" src="photo.gif" alt=""><br>
                 
                 <div style="margin-top:3%; text-align:justify;">                
-					<p>I am a PhD student in the Electrical Engineering department at Indian Institute of Technology Delhi. </p>
+					<p>I am a PhD student in the department of Electrical Engineering at Indian Institute of Technology Delhi. </p>
                 </div>
             </div> 
 
@@ -64,8 +74,7 @@
                 <p><b>Akanksha.Dixit@ee.iitd.ac.in</b><br>
                 <p>Electrical Engineering<br>
                 Indian Institute of Technology Delhi<br>
-                New Delhi<br>
-                India<br>
+                New Delhi, India<br>
                 </p>
             </div>
             
@@ -97,9 +106,6 @@
 
     </div>
     <!-- /.container -->
-    
-    <!-- Other people may like it too! -->
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
     
 </body>
 
