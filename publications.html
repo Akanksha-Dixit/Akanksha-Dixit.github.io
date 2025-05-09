@@ -1,106 +1,192 @@
 <!DOCTYPE html>
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
-
 <html lang="en">
+
 <head>
-  <title>Publications</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="style.css">
-    <style>
-        .navbar-nav > li.active > a {
-            background-color: #007bff;
-            color: #ffffff;
-            font-weight: bold;
-        }
-       
-        .left-nav {
-            width: 200px;
-            background-color: #f8f9fa;
-            padding: 15px;
-            height: 100vh; /* Full height */
-        }
+  <meta charset="UTF-8">
+  <title>Akanksha Dixit</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
 
-        .left-nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    .container {
+      width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+    }
 
-        .left-nav ul li {
-            margin-bottom: 10px;
-        }
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
 
-        .left-nav ul li a {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            color: #333;
-            background-color: #e9ecef;
-            border-radius: 4px;
-            text-align: center;
-        }
-    </style>
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav {
+      background: black;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .about-section {
+      display: flex;
+      gap: 20px;
+    }
+
+    .about-section img {
+      width: 140px;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+
+    .right {
+      flex: 1;
+    }
+
+
+    h2 {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .sidebar {
+      float: right;
+      width: 250px;
+      font-size: 14px;
+    }
+
+    .profile-box {
+      background-color: #f9f9f9;
+      border-left: 4px solid #333;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .profile-box h3 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .profile-box p {
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    
+
+    .main-content {
+      margin-right: 270px;
+    }
+
+    footer {
+      clear: both;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: gray;
+    }
+
+    .news-ticker-container {
+      height: 120px; /* Adjust to show 1 or 2 items at a time */
+      overflow: hidden;
+      position: relative;
+      background: white;
+      border: 1px solid #ccc;
+      padding-left: 10px;
+    }
+
+    .news-ticker {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      animation: scroll-up 10s linear infinite;
+    }
+
+    .news-ticker li {
+      padding: 10px 0;
+    }
+    ul.project-list {
+      padding-left: 20px;
+    }
+
+    ul.project-list li {
+      margin-bottom: 15px;
+    }
+
+    @keyframes scroll-up {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-100%); }
+    }
+
+  </style>
 </head>
+
 <body>
+  <div class="container">
 
-<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-		</div>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav" style="font-size: 18px;">
-				  <li><a href="index.html">HOME</a></li>
-				  <li><a href="projects.html">PROJECTS</a></li>
-				  <li class="active"><a href="publications.html" >PUBLICATIONS</a></li> 
-				  <li><a href="work.html" >WORK EXPERIENCE</a></li> 
-				  <li><a href="files/akanksha-resume.pdf">RESUME</a></li> 
-				  <li><a href="contact.html">CONTACT</a></li> 
-		  </ul>
-		</div>
-	
-	  </div>
-	</nav>
-  
-  
-  <!-- Page Content -->
-    <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="work.html">Work Experience</a>
+      <a href="files/akanksha-resume.pdf">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-        <div class="row">
-            <!-- Publications -->
-            <div class="col-md-8" style="height: 100vh;">    
-                <h2 id="publications">Publications</h2>
-                <strong>Peer-reviewed</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a> Names of the authors</li>
-                </ul>
-            
-                <strong>Technical Reports</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a>. Details of the report</li>
-                </ul>
-            </div>
-        </div>
+    <div class="sidebar">
+      <div class="profile-box">
+        <h3>Akanksha Dixit</h3>
+        <p>
+          <strong>PhD Student</strong><br>
+          Electrical Engineering<br>
+          IIT Delhi<br>
+          <strong>E-mail:</strong> Akanksha.Dixit@ee.iitd.ac.in
+        </p>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h2>Publications</h2>
+      <div class="about-section">
+        <ul class="project-list">
+            <li><i>"PredATW"</i>: Predicting the Asynchronous Time Warp Latency For VR Systems",<br>
+                <b>Akanksha Dixit</b> and Smruti R. Sarangi.
+                ACM Transactions on Embedded Computing Systems (TECS) 2024.
+                <a href="https://dl.acm.org/doi/pdf/10.1145/3677329">[pdf]</a>
+            </li>
+            <li><i>"SmrtSwarm"</i>: A Novel Swarming Model for Real-World Environments",<br>
+                Nikita Bhamu, Harshit Verma, <b>Akanksha Dixit</b>, Barbara Bollard, and Smruti R. Sarangi.
+                MDPI Drones, 2023.
+                <a href="https://www.mdpi.com/2504-446X/7/9/573">[pdf]</a>
+            </li>
+            <!-- Add more projects here -->
+        </ul>
+      </div>
+      
+
 
 
     </div>
-    <!-- /.container --> 
+
+    <footer>
+      &copy; 2025 Akanksha Dixit
+    </footer>
+  </div>
 </body>
 
 </html>

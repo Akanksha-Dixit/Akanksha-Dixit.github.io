@@ -1,112 +1,180 @@
 <!DOCTYPE html>
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
-
 <html lang="en">
+
 <head>
+  <meta charset="UTF-8">
   <title>Akanksha Dixit</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="style.css">
-    <style>
-        .navbar-nav > li.active > a {
-            background-color: #007bff;
-            color: #ffffff;
-            font-weight: bold;
-        }
-    </style>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      width: 900px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav {
+      background: black;
+      padding: 10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .about-section {
+      display: flex;
+      gap: 20px;
+    }
+
+    .about-section img {
+      width: 140px;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+
+    .right {
+      flex: 1;
+    }
+
+
+    h2 {
+      border-bottom: 1px solid #ccc;
+    }
+
+    .sidebar {
+      float: right;
+      width: 250px;
+      font-size: 14px;
+    }
+
+    .main-content {
+      margin-right: 270px;
+    }
+
+    footer {
+      clear: both;
+      text-align: center;
+      margin-top: 40px;
+      font-size: 13px;
+      color: gray;
+    }
+
+    .news-ticker-container {
+      height: 120px; /* Adjust to show 1 or 2 items at a time */
+      overflow: hidden;
+      position: relative;
+      background: white;
+      border: 1px solid #ccc;
+      padding-left: 10px;
+    }
+
+    .news-ticker {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      animation: scroll-up 10s linear infinite;
+    }
+
+    .news-ticker li {
+      padding: 10px 0;
+    }
+
+    @keyframes scroll-up {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-100%); }
+    }
+
+  </style>
 </head>
+
 <body>
+  <div class="container">
 
 
-<!-- Navigation -->
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	  <div class="container">
-		<div class="navbar-header">
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-		</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="publications.html">Publications</a>
+      <a href="work.html">Work Experience</a>
+      <a href="files/akanksha-resume.pdf">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		  <ul class="nav navbar-nav" style="font-size: 18px;">
-				  <li class="active"><a href="index.html">HOME</a></li>
-				  <li><a href="projects.html">PROJECTS</a></li>
-				  <li><a href="publications.html" >PUBLICATIONS</a></li> 
-				  <li><a href="work.html" >WORK EXPERIENCE</a></li> 
-				  <li><a href="files/akanksha-resume.pdf">RESUME</a></li> 
-				  <li><a href="contact.html">CONTACT</a></li> 
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-  
-  <!-- Page Content -->
-    <div class="container">
+    <div class="sidebar">
+      <h3>Research Profiles</h3>
+      <ul>
+        <li><a href="https://scholar.google.com/citations?user=kwiekFoAAAAJ&hl=en" target="_blank"
+            style="color: #0e24e4;"><b>Google Scholar</b></a></li>
+        <li><a href="https://www.linkedin.com/in/akanksha-dixit-75a71a128/" target="_blank"
+            style="color: #0e24e4;"><b>LinkedIn</b></a></li>
+        <li><a href="https://orcid.org/0009-0009-1565-7199" target="_blank" style="color: #0e24e4;"><b>ORCID</b></a>
+        </li>
+      </ul>
+    </div>
 
-        <div class="row">
-
-            <!-- Entries Column -->
-            <div class="col-md-8" style="height: 100vh;">
-                
-                <!-- Main Image -->
-                <img class="img-responsive" src="photo.gif" alt=""><br>
-                
-                <div style="margin-top:3%; text-align:justify;">                
-					<p>I am a PhD student in the department of Electrical Engineering at Indian Institute of Technology Delhi. </p>
-                </div>
-            </div> 
-
-            <!-- Contact Info on the Sidebar -->
-            <div class="col-md-4">
-                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Akanksha Dixit</b></div><br>
-                <p><b>Akanksha.Dixit@ee.iitd.ac.in</b><br>
-                <p>Electrical Engineering<br>
-                Indian Institute of Technology Delhi<br>
-                New Delhi, India<br>
-                </p>
-            </div>
-            
-            
-            <!-- Links on the Sidebar -->
-            <div class="col-md-4" style="margin-top:2%">
-              <dd><a href="https://scholar.google.com/citations?user=kwiekFoAAAAJ&hl=en" target="_blank">Google Scholar</a></dd> 
-              <dd><a href="https://www.linkedin.com/in/akanksha-dixit-75a71a128/" target="_blank">LinkedIn</a></dd>
-            </div>
-            
-            
-            <!-- Publications -->
-            <div class="col-md-8" style="height: 100vh;">    
-                <h2 id="publications">Publications</h2>
-                <strong>Peer-reviewed</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a> Names of the authors</li>
-                </ul>
-            
-                <strong>Technical Reports</strong><br/>
-                <ul>
-                <li class="paper" words="add, your, keywords, here"><a href="#">Full title</a>. Details of the report</li>
-                </ul>
-            </div>
-
-            
+    <div class="main-content">
+      <h2>Home</h2>
+      <div class="about-section">
+        <img src="files/Akanksha.jpg" alt="Akanksha Dixit">
+        <div class="right">
+          <p><strong>PhD Scholar</strong>, Department of Electrical Engineering, Indian Institute of Technology Delhi,
+            New Delhi </p>
+          <p> <strong>Lab:</strong> 306 SIT Building</p>
+          <p> <strong>E-mail:</strong> Akanksha.Dixit@ee.iitd.ac.in</p>
         </div>
+      </div>
+      <h3>Research Interests:</h3>
+      <div class="about-section">
+
+      </div>
+      <h3>Bio:</h3>
+      <div class="about-section">
+
+      </div>
+      <h3>Recent News and Updates:</h3>
+      <div class="news-ticker-container">
+        <ul class="news-ticker">
+          <li><i>"PredATW"</i>: Predicting the Asynchronous Time Warp Latency For VR Systems",<br>
+            <b>Akanksha Dixit</b> and Smruti R. Sarangi.
+            ACM Transactions on Embedded Computing Systems (TECS) 2024.
+            <a href="https://dl.acm.org/doi/pdf/10.1145/3677329">[pdf]</a>
+          </li>
+          <li><i>"SmrtSwarm"</i>: A Novel Swarming Model for Real-World Environments",<br>
+            Nikita Bhamu, Harshit Verma, <b>Akanksha Dixit</b>, Barbara Bollard, and Smruti R. Sarangi.
+            MDPI Drones, 2023.
+            <a href="https://www.mdpi.com/2504-446X/7/9/573">[pdf]</a>
+          </li>
+          <!-- Add more <li> entries here if needed -->
+        </ul>
+      </div>
 
 
     </div>
-    <!-- /.container -->
-    
+
+    <footer>
+      &copy; 2025 Akanksha Dixit
+    </footer>
+  </div>
 </body>
 
 </html>
